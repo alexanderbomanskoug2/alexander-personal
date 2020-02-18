@@ -1,0 +1,7 @@
+$bp:(
+    xs: unquote("@media only screen and (max-width: 600px)"),
+    sm: unquote("@media only screen and (min-width: 600px)"),
+    md: unquote("@media only screen and (min-width: 768px)2"),
+    lg: unquote("@media only screen and (min-width: 992px)"),
+    xl: unquote("@media only screen and (min-width: 1200px)")
+)

@@ -1,0 +1,33 @@
+@import './var_colors.scss';
+@import './settings.scss';
+
+body {
+    background-color: $color_bg;
+    color: $lavender;
+}
+
+.l-home {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 2fr 3fr;
+    grid-template-areas:
+        ". ."
+        "menu .";
+
+    &__menu {
+        grid-area: menu;
+        color: $lavender;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .l-home {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr;
+        grid-template-areas:
+        "."
+        "menu";
+    }
+}
